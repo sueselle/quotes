@@ -4,7 +4,7 @@ import CategoryForm from "./CategoryForm";
 
 
 
-function Quotes({filteredQuotes, category, categories, handleCategoryChange, addToFavorites}) {
+function Quotes({filteredQuotes, category, categories, favoriteQuotes, handleCategoryChange, addToFavorites}) {
     return (
         <section className="all-quotes">
         <div className="quotes wrapper">
@@ -14,8 +14,8 @@ function Quotes({filteredQuotes, category, categories, handleCategoryChange, add
                 <CategoryForm categories={categories} category={category} handleCategoryChange={handleCategoryChange} />
             </div>
         {filteredQuotes.map((quote) => (
-            <QuoteCard key={quote.id} quote={quote} addToFavorites={addToFavorites}/>
-        ))}
+            <QuoteCard key={quote.id} quote={quote} addToFavorites={addToFavorites} favoriteQuotes={favoriteQuotes}/>
+        ))};
         </div>
         </section>
     );
