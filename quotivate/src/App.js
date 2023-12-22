@@ -38,7 +38,7 @@ const handleCategoryChange = (e) => {
     <div className='App'>
       <Header />
       <main>
-        {loading ? (<Loader />) : (<Quotes quotes={quotes} category={category} categories={categories} handleCategoryChange={handleCategoryChange}/>)}</main>
+        {loading ? (<Loader />) : (<Quotes filteredQuotes={filteredQuotes} category={category} categories={categories} handleCategoryChange={handleCategoryChange}/>)}</main>
       <Footer />
     </div>
   );
