@@ -1,7 +1,8 @@
 import React from "react";
 import FavoriteQuoteCard from "./FavoriteQuoteCard";
 
-const FavoriteQuotes = ({favoriteQuotes, maxFaves, removeFromFavorites}) => {
+function FavoriteQuotes ({favoriteQuotes, maxFaves, removeFromFavorites}) {
+    const remainingFavoriteAmount = maxFaves - favoriteQuotes.length;
     return (
         <section className="favorite-quotes">
           <div className="wrapper quotes">
@@ -25,7 +26,7 @@ const FavoriteQuotes = ({favoriteQuotes, maxFaves, removeFromFavorites}) => {
           </div>
 
         </section> 
-    )
+    );
 }
 
 export default FavoriteQuotes;

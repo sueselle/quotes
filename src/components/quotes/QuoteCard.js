@@ -20,7 +20,7 @@ const faveStyle = alreadyFavorite ? "#333" : "";
       </div>
   <footer>
     <p className='author'>{quote.author}</p>
-    <p class="add-favorite" onClick={() => addToFavorites(quote.id)}>
+    <p className='add-favorite' onClick={() => addToFavorites(quote.id)}>
       <Heart style={{ fill: faveStyle }}/>
     </p>
   </footer>
