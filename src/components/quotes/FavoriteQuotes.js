@@ -27,7 +27,6 @@ function FavoriteQuotes({ favoriteQuotes, maxFaves, removeFromFavorites }) {
               Once you choose, they will appear here.
             </p>
           </div>
-        )
       </div>
 
     </section>
